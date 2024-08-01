@@ -3,6 +3,7 @@ import { auth, db } from '../firebase';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import Navbar from '../Navbar/Navbar';
 
 
 auth
@@ -35,6 +36,8 @@ const RegisterPage = () => {
         }
     }
   return (
+    <div>
+      <Navbar/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
         <h1 className="text-2xl font-bold mb-6 text-center">Signup</h1>
@@ -80,6 +83,7 @@ const RegisterPage = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

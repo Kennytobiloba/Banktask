@@ -6,13 +6,15 @@ import Login from './Components/Login/Login';
 import RegisterPage from './Components/RegisterPage/RegisterPage';
 import Profile from './Components/Profile/Profile';
 import Main from './Components/Main/Main';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
-  const notify = () => toast("Wow so easy!");
+  
 
   return (
     <div>
       <div>
+      
         <div>
           <Router>
             <Routes>

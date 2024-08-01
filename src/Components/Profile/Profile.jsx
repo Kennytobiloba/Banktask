@@ -40,18 +40,18 @@ const Profile = () => {
 
   return (
     <div>
-      <nav className="bg-gray-800 p-4">
+      <nav className="bg-green-100 p-6">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-white text-2xl font-bold">
-            BiG MONEY APP
+          <div className="text-black  text-2xl font-bold">
+            BIG MONEY APP
           </div>
           <div className="flex items-center">
             {userDetails && (
-              <p className="text-white mr-4">Hello, {userDetails.DisplayName}</p>
+              <p className="text-black mr-4">Hello, {userDetails.DisplayName}</p>
             )}
             <button 
               onClick={handleLogout} 
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gren-300 border-1 border-green-600 bg-green-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Logout
             </button>

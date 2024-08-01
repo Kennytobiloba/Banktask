@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { auth } from '../firebase';
+import Navbar from '../Navbar/Navbar';
 
 
 const Login = () => {
@@ -26,7 +27,9 @@ const Login = () => {
       }
   }
 
-  return (
+  return ( 
+    <div>
+      <Navbar/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
         <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
@@ -64,6 +67,7 @@ const Login = () => {
           <span>Don't have an account?</span> <Link to="/register" className="text-green-500 hover:text-green-600">Register</Link>
         </p>
       </div>
+    </div>
     </div>
   );
 };
